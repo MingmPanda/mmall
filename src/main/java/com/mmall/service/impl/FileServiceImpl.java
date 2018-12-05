@@ -24,6 +24,7 @@ public class FileServiceImpl implements IFileService {
 
     @Override
     public String upload(MultipartFile file, String path) {
+        //获取客户端文件系统中的原始文件名
         String fileName = file.getOriginalFilename();
         //扩展名
         //abc.jpg
